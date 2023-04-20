@@ -5,7 +5,7 @@ var gameState=1;
 
 var knife,fruit ,monster,fruitGroup,monsterGroup, score,r,randomFruit, position;
 var knifeImage , fruit1, fruit2 ,fruit3,fruit4, monsterImage, gameOverImage;
-var gameOverSound ,knifeSwoosh;
+var gameOverSound ,knifeSwooshSound;
 
 function preload(){
   
@@ -119,9 +119,9 @@ function fruits(){
     fruit.x = 0    
   //Increase the velocity of fruit after score 4 
 
-      // fruit.velocityX= (7+(score/4));
+       fruit.velocityX= (7+(score/4));
       // fruit.velocityY= (7+(score));
-       fruit.velocity= (7+(score/4));
+      // fruit.velocity= (7+(score/4));
       // fruit.velocityX= (7);
      
     fruit.scale=0.2;
